@@ -7,14 +7,14 @@ use Illuminate\Http\Request;
 
 class MahasiswaController extends Controller
 {
-    /**
-     * Display a listing of the resource.
+    /** resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return "Halaman Index Mahasiswa";
+        // return "Halaman Index Mahasiswa";
+        return view('Mahasiswa.index');
     }
 
     /**
