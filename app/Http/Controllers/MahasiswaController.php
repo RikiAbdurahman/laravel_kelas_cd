@@ -2,19 +2,28 @@
 
 namespace App\Http\Controllers;
 
-use App\mahasiswa;
+use App\Mahasiswa;
+use DataTables;
 use Illuminate\Http\Request;
 
 class MahasiswaController extends Controller
 {
-    /** resource.
-     *
+    /** 
+     * Display a listing of the resource
+     * 
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
         // return "Halaman Index Mahasiswa";
-        return view('Mahasiswa.index');
+        return view('/Mahasiswa.index');
+    }
+    public function mhs_list()
+    {
+        return Datatables::of(Mahasiswa::all())
+                ->removeColumn('id')
+                ->addIndexColumn()
+                ->make(true); //Good
     }
 
     /**
