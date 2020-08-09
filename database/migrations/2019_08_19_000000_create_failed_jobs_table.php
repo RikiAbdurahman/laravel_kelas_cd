@@ -13,11 +13,11 @@ class CreateFailedJobsTable extends Migration
      */
     public function up()
     {
-        Schema::create('mahasiswa', function (Blueprint $table) {
+        Schema::create('failed_jobs', function (Blueprint $table) {
             $table->id();
-            $table->string('nim',11);
-            $table->string('nama_lengkap');
-            $table->string('payload');
+            $table->text('connection');
+            $table->text('queue');
+            $table->longText('payload');
             $table->longText('exception');
             $table->timestamp('failed_at')->useCurrent();
         });

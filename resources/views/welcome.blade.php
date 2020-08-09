@@ -81,7 +81,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Riki Abdurahman 1755201281
+                    Dedi Setiawan Aprianto
+                    1755201250
                 </div>
 
                 <div class="links">
