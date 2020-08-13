@@ -7,7 +7,7 @@
     <p><a href="/prodi/create" class="btn btn-success btn-sm">Tambah</a></p>
 
     @include('layouts.alert')
-
+    
     <table class="table table-striped" id="prodi-table">
         <thead>
             <tr>

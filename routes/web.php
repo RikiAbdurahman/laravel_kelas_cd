@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\MahasiswaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,15 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-// return view('welcome');
+//Route::get('/', function () {
+//    return view('welcome');
 // });
 
-Route::get('/', 'MahasiswaController@index');
+Route::get('/','MahasiswaController@index');
 
 //Mahasiswa (Route dengan detail satu persatu)
 Route::get('/mhs', 'MahasiswaController@index')->name('mhs.index');
-Route::get('/mhs/list', 'MahasiswaController@mhs_list')->name('mhs_list');
+Route::get('/mhs/list', 'MahasiswaController@mhs_list')->name('mhs.list');
 Route::get('/mhs/create', 'MahasiswaController@create');
 Route::post('/mhs/store', 'MahasiswaController@store');
 Route::get('/mhs/edit/{nim}', 'MahasiswaController@edit');

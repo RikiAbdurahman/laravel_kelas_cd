@@ -4,13 +4,13 @@
 @section('bread2','Data')
 @section('content')
     <h3>Form Prodi</h3><hr>
-
+    
     @include('layouts.alert')
-
+    
     <form action="{{ route('prodi.update', $prodi->kode_prodi) }}" method="POST">
     @csrf
     @method('PUT')
-
+    
     <div class="form-group row">
         <label for="kode_prodi" class="col-sm-12">Kode_Prodi</label>
         <div class="col-sm-3">

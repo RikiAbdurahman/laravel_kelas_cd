@@ -78,7 +78,7 @@ class ProdiController extends Controller
      */
     public function edit(Prodi $prodi, $id)
     {
-
+        
         $prodi = Prodi::find($id);
         return view ('prodi.edit', compact('prodi'));
     }

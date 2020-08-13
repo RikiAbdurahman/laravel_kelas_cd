@@ -9,7 +9,7 @@ class Prodi extends Model
     protected $table = 'prodi';
     protected $primaryKey = 'kode_prodi';
 
-
+     
     protected $fillable = ['kode_prodi','nama_prodi','kaprodi',''];
 
     //Field yang diabaikan isiannya
